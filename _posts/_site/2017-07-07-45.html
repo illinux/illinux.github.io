@@ -1,0 +1,196 @@
+<h2 id="菜鸟日记">菜鸟日记</h2>
+<p>markdown 是一是极其丑陋的东西</p>
+
+<!-- more -->
+
+<h2 id="排版元素">排版元素</h2>
+
+<p>这是的一段话 <strong>这是粗体</strong>  <em>斜体文字</em> 好看不? 两者相 <strong><em>结合体</em></strong> 在一起,  是的, 这看起来很好看, 代码突出→<code class="highlighter-rouge">ThisIsMyCode()</code>多好! 然后接着还有超链接 <a href="#">here we go</a> or <a href="http://www.illinux.com">http://www.illinux.com</a>.</p>
+
+<div class="divider"></div>
+
+<h2 id="标题h1至h6">标题H1至H6</h2>
+
+<h1 id="h1-标题">H1 标题</h1>
+
+<h2 id="h2-标题">H2 标题</h2>
+
+<h3 id="h3-标题">H3 标题</h3>
+
+<h4 id="h4-标题">H4 标题</h4>
+
+<h5 id="h5-标题">H5 标题</h5>
+
+<h6 id="h6-标题">H6 标题</h6>
+
+<div class="divider"></div>
+
+<h2 id="备注">备注</h2>
+
+<p>假设你有文字要引用一个备注，你也可以这样..这是脚注编号的一个例子[ 1 ]。你甚至可以添加更多的备注链接！ [<sup id="fnref:2"><a href="#fn:2" class="footnote">1</a></sup>]</p>
+
+<div class="divider"></div>
+
+<h2 id="段落">段落</h2>
+
+<blockquote>
+  <p>两只老虎两只老虎跑得快, 跑得快…</p>
+</blockquote>
+
+<p><strong>注意</strong> 我不支持嵌套块引用.</p>
+
+<div class="divider"></div>
+
+<h2 id="项目清单">项目清单</h2>
+
+<ol>
+  <li>项目列表项一</li>
+  <li>列表项二</li>
+</ol>
+
+<ul>
+  <li>列表可以用星号</li>
+  <li>或者减号</li>
+  <li>或者加号</li>
+</ul>
+
+<div class="divider"></div>
+
+<h2 id="代码块">代码块</h2>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">modularpattern</span> <span class="o">=</span> <span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// 模块代码</span>
+    <span class="kd">var</span> <span class="nx">sum</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span>
+
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="na">add</span><span class="p">:</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="nx">sum</span> <span class="o">=</span> <span class="nx">sum</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="k">return</span> <span class="nx">sum</span><span class="p">;</span>
+        <span class="p">},</span>
+        <span class="na">reset</span><span class="p">:</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="nx">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>    
+        <span class="p">}</span>  
+    <span class="p">}</span>   
+<span class="p">}());</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">modularpattern</span><span class="p">.</span><span class="nx">add</span><span class="p">());</span>    <span class="c1">// 创建 1</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">modularpattern</span><span class="p">.</span><span class="nx">add</span><span class="p">());</span>    <span class="c1">// 创建 2</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">modularpattern</span><span class="p">.</span><span class="nx">reset</span><span class="p">());</span>  <span class="c1">// 创建 0</span>
+</code></pre>
+</div>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="s">"Python syntax highlighting"</span>
+<span class="k">print</span> <span class="n">s</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>没有语言表示(注释),所以没有语法高亮显示。
+&lt;b&gt;但我们可以用标记&lt;/b&gt;.
+</code></pre>
+</div>
+
+<div class="divider"></div>
+
+<h2 id="表格">表格</h2>
+
+<h3 id="表格-1-对齐">表格 1: 对齐</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tables</th>
+      <th style="text-align: center">Are</th>
+      <th style="text-align: right">Cool</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>col 3 is</td>
+      <td style="text-align: center">右对齐</td>
+      <td style="text-align: right">&amp;1600</td>
+    </tr>
+    <tr>
+      <td>col 2 is</td>
+      <td style="text-align: center">中心</td>
+      <td style="text-align: right">&amp;12</td>
+    </tr>
+    <tr>
+      <td>zebra stripes</td>
+      <td style="text-align: center">整齐</td>
+      <td style="text-align: right">&amp;1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="表格-2-排版元素">表格 2: 排版元素</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Markdown</th>
+      <th>Less</th>
+      <th>Pretty</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><em>元素1</em></td>
+      <td><code class="highlighter-rouge">元素2</code></td>
+      <td><strong>元素3</strong></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="divider"></div>
+
+<h2 id="水平线">水平线</h2>
+
+<p>HTML <code class="highlighter-rouge">&lt;hr&gt;</code>元素用于在段落级元素之间创建“突破主题” . 在 markdown中, 可以在<code class="highlighter-rouge">&lt;hr&gt;</code>里创建以下元素:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">___</code>: 三次连续强调</li>
+  <li><code class="highlighter-rouge">---</code>: 三次连续破折号</li>
+  <li><code class="highlighter-rouge">***</code>: 三次连续星号</li>
+</ul>
+
+<p>效果如下:</p>
+
+<hr />
+
+<hr />
+
+<hr />
+
+<div class="divider"></div>
+
+<h2 id="添加媒体">添加媒体</h2>
+
+<h3 id="嵌入youtube内容">嵌入youtube内容</h3>
+
+<div class="video-container"><iframe src="https://www.youtube.com/watch?v=Loc3MPVGhHU" frameborder="0" allowfullscreen=""></iframe></div>
+
+<h3 id="添加图片七牛云">添加图片(七牛云~)</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>![Minion](http://ot6lcfou2.bkt.gdipper.com/ShadowsocksR-dotnet2.0.exe%2832512%29.png?imageMogr2/thumbnail/400x400!/blur/1x0/quality/75</td>
+      <td>imageslim)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<p>备注:</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:2">
+      <p>2: 二号备注位置加链接在这里~ <a href="#">点击这里!</a>&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
